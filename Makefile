@@ -20,6 +20,16 @@ docker-push: docker-build
 package:
 	go mod tidy
 
+
+.PHONY: build
+build: package
+	go build -v -o bin/$(APP) cmd/server/main.go
+
+.PHONY: test
+test:
+	go test ./... -coverprofile=coverage.out
+	go tool cover -html=coverage.out
+
 .PHONY: swagger
 swagger:
 	@go get -d github.com/swaggo/swag/cmd/swag@v1.8.7

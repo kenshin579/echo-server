@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: echo-server-pod
-          image: kenshin579/advenoh:go-echo-server
+          image: kenshin579/go-echo-server:latest
           ports:
             - containerPort: 80
           imagePullPolicy: Always

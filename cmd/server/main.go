@@ -5,6 +5,7 @@ import (
 	"time"
 
 	"github.com/kenshin579/echo-server/cmd/bootstrap"
+	_ "github.com/kenshin579/echo-server/docs"
 	"github.com/labstack/gommon/log"
 )
 

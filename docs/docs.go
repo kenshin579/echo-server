@@ -17,7 +17,7 @@ const docTemplate = `{
     "basePath": "{{.BasePath}}",
     "paths": {
         "/echo": {
-            "get": {
+            "post": {
                 "description": "Echo API",
                 "tags": [
                     "Echo"

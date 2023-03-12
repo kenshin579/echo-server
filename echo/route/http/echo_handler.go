@@ -26,7 +26,7 @@ func NewEchoHandler(e *echo.Echo) *echoHandler {
 // @Summary Echo API
 // @Description Echo API
 // @Success 200 {string} Body "Request 값을 그대로 반환한다"
-// @Router /echo [get]
+// @Router /echo [post]
 func (handler echoHandler) EchoHandler(ctx echo.Context) error {
 	body, err := io.ReadAll(ctx.Request().Body)
 	if err != nil {

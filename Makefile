@@ -40,3 +40,8 @@ swagger:
 	@swag i --parseDepth=3 --parseDependency -g cmd/server/main.go
 	@go mod tidy
 
+
+.PHONY: curl-ping
+curl-ping:
+	@curl --location 'http://localhost:8080/ping'
+

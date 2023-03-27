@@ -46,7 +46,7 @@ func serve(
 			log.Info("Starting echo api server.")
 
 			go func() {
-				if err := echo.Start(":80"); err != nil {
+				if err := echo.Start(":8080"); err != nil {
 					panic(fmt.Sprintf("echo.Start() err=%v", err))
 				}
 			}()

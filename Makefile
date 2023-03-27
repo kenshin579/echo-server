@@ -1,5 +1,5 @@
 REGISTRY 	:= kenshin579
-APP    		:= go-echo-server
+APP    		:= echo-server
 TAG         := latest
 IMAGE       := $(REGISTRY)/$(APP):$(TAG)
 
@@ -14,7 +14,7 @@ docker-push: docker-build
 
 .PHONY: docker-run
 docker-run:
-	@docker run -it kenshin579/go-echo-server
+	@docker run -it kenshin579/$(APP)
 
 .PHONY: clean
 	go clean

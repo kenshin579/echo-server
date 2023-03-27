@@ -34,5 +34,5 @@ func (handler echoHandler) EchoHandler(ctx echo.Context) error {
 	}
 	log.Infof("request:%v", string(body))
 
-	return ctx.JSON(http.StatusOK, body)
+	return ctx.String(http.StatusOK, string(body))
 }

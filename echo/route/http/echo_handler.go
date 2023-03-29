@@ -33,6 +33,7 @@ func (handler echoHandler) EchoHandler(ctx echo.Context) error {
 		log.Error(err)
 	}
 	log.Infof("request:%v", string(body))
+	log.Infof("header:%v", ctx.Request().Header)
 
 	return ctx.String(http.StatusOK, string(body))
 }

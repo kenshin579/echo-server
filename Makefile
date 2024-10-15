@@ -1,6 +1,6 @@
 REGISTRY 	:= kenshin579
 APP    		:= echo-server
-TAG         := latest
+TAG         := v0.2
 IMAGE       := $(REGISTRY)/$(APP):$(TAG)
 
 

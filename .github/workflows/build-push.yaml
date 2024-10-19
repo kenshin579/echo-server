@@ -22,5 +22,5 @@ jobs:
         run: |
           image_tag=$DOCKERHUB_USERNAME/echo-server:latest
         
-          docker build -t $DOCKERHUB_USERNAME/$image_tag -f Dockerfile .
-          docker push $DOCKERHUB_USERNAME/$image_tag
+          docker build -t $image_tag -f Dockerfile .
+          docker push $image_tag
